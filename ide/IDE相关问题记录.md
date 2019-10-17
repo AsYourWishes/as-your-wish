@@ -39,7 +39,7 @@
    
 3. Eclipse集成Scala IDE，编写代码时出现疑似编译问题
 
-   ![](E:\学习笔记\问题记录需要整理\可能是编译问题\编译错误2.png)
+   ![](https://raw.githubusercontent.com/AsYourWishes/as-your-wish/master/image/%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF2.png)
 
    问题描述：
 
