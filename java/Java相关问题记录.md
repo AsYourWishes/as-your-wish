@@ -5,3 +5,7 @@
    原因：前面调用了.size()方法，会迭代所有数据
 
    解决办法：使用.hasNext()方法代替
+
+#### 重要：
+
+1. Java的ScriptEngine，处理Java动态脚本。
