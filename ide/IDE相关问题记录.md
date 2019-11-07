@@ -46,6 +46,13 @@
    1. 常见为代码块的一个`{`报错，报错信息为`def while$12():<error>`
    2. 编译时随机出现的问题
    3. 任意修改内容重新保存，报错可能消失，可能还在
-4. 重新保存错误消失之后，下次修改内容保存的时候，同一位置的错误还可能出现
+   4. 重新保存错误消失之后，下次修改内容保存的时候，同一位置的错误还可能出现
    
    解决办法：添加或删除任意空白内容，再次保存即可解决
+
+5. 打开Eclipse报错：An error has occurred. See the log file C:\Users\\###\eclipse-workspace\.metadata\.log.
+
+   解决办法：
+
+   1. 删除/.metadata/.plugins/org.eclipse.core.resources/.snap（若解决，不需要第二个方法）
+   2. 删除/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
