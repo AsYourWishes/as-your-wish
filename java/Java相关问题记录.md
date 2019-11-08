@@ -6,6 +6,10 @@
 
    解决办法：使用.hasNext()方法代替
 
+2. SimpleDateFormat线程不安全的解决方案
+
+   ![](E:\学习笔记\image\SimpleDateFormat线程不安全问题解决方法.png)
+
 #### 重要：
 
 1. Java的ScriptEngine，处理Java动态脚本。
