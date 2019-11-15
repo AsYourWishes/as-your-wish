@@ -12,4 +12,4 @@
 | ctrl + shift       | 移动代码块                      |
 | ctrl + D           | 复制一行                        |
 | ctrl + alt + L     | 格式化代码                      |
-|                    |                                 |
+| ctrl + alt + V     | 补全声明变量                    |
