@@ -10,6 +10,7 @@
    hbase		2.0.2.3.1.0.0-78
    phoenix		5.0.0.3.1.0.0-78
    zk			3.4.6.3.1.0.0-78
+   livy		0.5.0.3.1.0.0-78
    
    hive		3.1.0
    sqoop		1.4.7
@@ -49,6 +50,7 @@
        <kafka.version>2.0.0.3.1.0.0-78</kafka.version>
        <hbase.version>2.0.2.3.1.0.0-78</hbase.version>
        <phoenix.version>5.0.0.3.1.0.0-78</phoenix.version>
+   	<livy.version>0.5.0.3.1.0.0-78</livy.version>
    <!--  alibaba  -->
        <fastjson.version>1.2.62</fastjson.version>
    ```
@@ -92,13 +94,23 @@
      </dependency>
      ```
 
-   - kafka
+   - livy
 
      ```xml
+     <dependency>
+       <groupId>org.apache.livy</groupId>
+       <artifactId>livy-client-http</artifactId>
+       <version>${livy.version}</version>
+     </dependency>
+     ```
+     
+   - kafka
+   
+     ```xml
      <dependency><!-- kafka -->
-         <groupId>org.apache.kafka</groupId>
+      <groupId>org.apache.kafka</groupId>
          <artifactId>kafka_2.11</artifactId>
-         <version>${kafka.version}</version>
+      <version>${kafka.version}</version>
      </dependency>
      <dependency>
          <groupId>org.apache.kafka</groupId>
@@ -106,9 +118,9 @@
          <version>${kafka.version}</version>
      </dependency>
      ```
-
+   
    - hbase
-
+   
      ```xml
      <dependency><!-- Hbase -->
          <groupId>org.apache.hbase</groupId>
@@ -116,9 +128,9 @@
          <version>${hbase.version}</version>
      </dependency>
      <dependency>
-         <groupId>org.apache.hbase</groupId>
+      <groupId>org.apache.hbase</groupId>
          <artifactId>hbase-common</artifactId>
-         <version>${hbase.version}</version>
+      <version>${hbase.version}</version>
      </dependency>
      <dependency>
          <groupId>org.apache.hbase</groupId>
@@ -138,7 +150,7 @@
      ```
 
    - json
-
+   
      ```xml
      <dependency>
          <groupId>com.alibaba</groupId>
@@ -146,5 +158,5 @@
          <version>${fastjson.version}</version>
      </dependency>
      ```
-
+   
      
