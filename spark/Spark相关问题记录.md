@@ -84,3 +84,7 @@
          println("size" + a.size)
        })
    ```
+
+### Livy
+
+1. 启动session后，如果没有操作，1个小时后session会自动停止。
