@@ -85,6 +85,22 @@
        })
    ```
 
+6. 提交sparkstreaming任务时，报错：
+
+   ```
+   INFO ApplicationMaster: Waiting for spark context initialization...
+   Exception in thread "Driver" java.lang.NullPointerException
+   
+   ERROR ApplicationMaster: Uncaught exception: 
+   java.lang.IllegalStateException: User did not initialize spark context!
+   	
+   INFO ApplicationMaster: Final app status: FAILED, exitCode: 13, (reason: Uncaught exception: java.lang.IllegalStateException: User did not initialize spark context!)
+   ```
+
+   原因：代码问题。
+
+   ***注意：如果使用scala编写spark程序，用maven的install打包之前，先用clean清除，否则jar包会有问题。***
+
 ### Livy
 
 1. 启动session后，如果没有操作，1个小时后session会自动停止。
