@@ -61,5 +61,7 @@
        <Manager sessionAttributeValueClassNameFilter="java\.lang\.(?:Boolean|Integer|Long|Number|String)|org\.apache\.catalina\.filters\.CsrfPreventionFilter\$LruCache(?:\$1)?|java\.util\.(?:Linked)?HashMap"/>
      </Context>
      ```
-  
-     
+
+- 配置Tomcat开机自启
+
+  https://mp.weixin.qq.com/s/-YG_BG9TN_fi6AxgbCSvJg
